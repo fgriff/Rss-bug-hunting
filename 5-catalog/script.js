@@ -24,7 +24,7 @@ function getFiltered() {
 
   if (search) {
     result = result.filter((p) =>
-      p.name.toLowerCase() === search.toLowerCase()
+      p.name.toLowerCase().includes(search.toLowerCase())
     );
   }
 
